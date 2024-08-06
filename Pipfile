@@ -1,0 +1,36 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+autopep8 = "*"
+certifi = "*"
+chardet = "*"
+defusedxml = "*"
+django = "*"
+django-allauth = "*"
+django-countries = "*"
+django-crispy-forms = "*"
+django-debug-toolbar = "*"
+idna = "*"
+oauthlib = "*"
+pep8 = "*"
+pillow = "*"
+pycodestyle = "*"
+python-decouple = "*"
+python3-openid = "*"
+pytz = "*"
+requests = "*"
+requests-oauthlib = "*"
+sqlparse = "*"
+stripe = "*"
+urllib3 = "*"
+psycopg = "*"
+crispy-bootstrap5 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.9"

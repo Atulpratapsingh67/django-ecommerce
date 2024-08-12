@@ -15,7 +15,6 @@ RUN pip install pipenv
 RUN pipenv install --system --deploy
 
 # Run Django migrations
-RUN python manage.py makemigrations
 RUN python manage.py migrate
 
 # Expose port 8000 to the outside world

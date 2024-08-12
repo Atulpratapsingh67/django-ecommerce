@@ -1,4 +1,5 @@
 from django.urls import path
+from rest_framework import routers
 from .views import (
     ItemDetailView,
     CheckoutView,
@@ -9,10 +10,15 @@ from .views import (
     remove_single_item_from_cart,
     PaymentView,
     AddCouponView,
-    RequestRefundView
+    RequestRefundView,
+    AddItemViewset
 )
 
 app_name = 'core'
+
+router = routers.DefaultRouter()
+router.register(r'add-item', AddItemViewset,'add-item')
+
 
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),
@@ -27,3 +33,5 @@ urlpatterns = [
     path('payment/<payment_option>/', PaymentView.as_view(), name='payment'),
     path('request-refund/', RequestRefundView.as_view(), name='request-refund')
 ]
+
+urlpatterns += router.urls

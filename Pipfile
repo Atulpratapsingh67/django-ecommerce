@@ -26,8 +26,13 @@ requests-oauthlib = "*"
 sqlparse = "*"
 stripe = "*"
 urllib3 = "*"
-psycopg = "*"
 crispy-bootstrap5 = "*"
+psycopg2 = "*"
+django-storages = "*"
+whitenoise = "*"
+environ = "*"
+boto3 = "*"
+djangorestframework = "*"
 
 [dev-packages]
 

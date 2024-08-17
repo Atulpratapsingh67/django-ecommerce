@@ -1,7 +1,0 @@
-{
-  "AWSEBDockerrunVersion": 3,
-  "Image": {
-    "Name": "034362027944.dkr.ecr.ap-south-1.amazonaws.com/django-test-app:latest",
-    "Update": "true"
-  }
-}

@@ -2,6 +2,7 @@
 .env
 media_root
 media
+venv/
 # Elastic Beanstalk Files
 .elasticbeanstalk/
 !.elasticbeanstalk/*.cfg.yml

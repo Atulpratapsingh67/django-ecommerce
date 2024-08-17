@@ -7,7 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(
 
 SECRET_KEY = config('SECRET_KEY')
 ALLOWED_HOSTS = ['*']
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -113,5 +113,5 @@ AWS_STORAGE_REGION = config("AWS_STORAGE_REGION")
 AWS_S3_REGION_NAME = config("AWS_STORAGE_REGION")
 AWS_S3_FILE_OVERWRITE = False
 
-STRIPE_PUBLIC_KEY = config('STRIPE_LIVE_PUBLIC_KEY')
-STRIPE_SECRET_KEY = config('STRIPE_LIVE_SECRET_KEY')
+STRIPE_PUBLIC_KEY = config('STRIPE_LIVE_PUBLIC_KEY', default='public')
+STRIPE_SECRET_KEY = config('STRIPE_LIVE_SECRET_KEY', default='secret')

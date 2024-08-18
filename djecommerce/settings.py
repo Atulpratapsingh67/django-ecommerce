@@ -101,7 +101,8 @@ STORAGES = {
         "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
     },
     "staticfiles": {
-        "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage"
+        # "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
     },
 }
 AWS_ACCESS_KEY_ID = config("AWS_ACCESS_KEY_ID")
